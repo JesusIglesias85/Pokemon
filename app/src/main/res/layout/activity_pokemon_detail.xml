@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDetail"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@color/backgroundDetail"
+        android:background="@drawable/rounded_corner_view"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="PIKACHU" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@color/backgroundDetail"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailName"
+        tools:srcCompat="@mipmap/pikachuPreview" />
+
+    <TextView
+        android:id="@+id/tvDetailHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_view"
+        android:textColor="@color/backgroundDetail"
+        android:textSize="24sp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Height: 1m" />
+
+    <TextView
+        android:id="@+id/tvDetailWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_view"
+        android:textColor="@color/backgroundDetail"
+        android:textSize="24sp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailHeight"
+        tools:text="Weight: 1Kg" />
+
+    <TextView
+        android:id="@+id/tvDetailBaseExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner_view"
+        android:textColor="@color/backgroundDetail"
+        android:textSize="24sp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailWeight"
+        tools:text="Base experience: 125" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
